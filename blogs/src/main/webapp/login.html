@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script>
+        function mysub(type) {
+            var username=jQuery("#username");
+            var password = jQuery("#password");
+
+            if(type==2){
+                if(confirm("确认清空？")){
+                    username.val("");
+                    password.val("");
+                }
+                return false;
+            }
+
+            if(username.val().trim()==""){
+                alert("input username");
+                username.focus();
+                return false;
+            }
+
+            if(password.val().trim()==""){
+                alert("input password");
+                password.focus();
+                return false;
+            }
+
+            //2、请求后端
+            jQuery.getJSON("login",{
+                "username":username.val(),
+                "password":password.val()
+            },function (data) {
+                if(data!=null && data.succ==1 ){
+                    location.href="myarticle.html";
+                } else{
+                    alert("登陆失败 "+data.msg);
+                }
+
+            });
+        }
+    </script>
+</head>
+<body>
+<div style="text-align: center">
+    <h1>登录</h1>
+    用户名：<input type="text" name="username" id="username"><p></p>
+    密码：<input type="password" name="password" id="password"><p></p>
+    <input type="button" value="登录" onclick="mysub(1)">
+    <input type="button" value="清空" onclick="mysub(2)">
+
+</div>
+</body>
+</html>
