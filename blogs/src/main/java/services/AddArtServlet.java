@@ -1,7 +1,7 @@
 package services;
 
 import dao.ArticleInfoDao;
-import models.ArticleInfo;
+import models.UserInfo;
 import utils.ResultJSONUtils;
 
 import javax.servlet.ServletException;
@@ -9,17 +9,18 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.HashMap;
 
 /**
  * User:DELL
- * Date:2021-04-06
- * Time:21:30
+ * Date:2021-04-07
+ * Time:11:32
  */
-@WebServlet("/init")
-public class InitServlet extends HttpServlet {
+@WebServlet("/addart")
+public class AddArtServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         this.doGet(request, response);
@@ -29,27 +30,35 @@ public class InitServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int succ=-1;
         String msg="";
-        ArticleInfo articleInfo = null;
 
-        int id=Integer.parseInt(request.getParameter("id"));
+        String title = request.getParameter("title");
+        String content = request.getParameter("content");
 
-        if(id>0){
-            ArticleInfoDao articleInfoDao = new ArticleInfoDao();
-            try {
-                articleInfo = articleInfoDao.getArtById(id);
-                succ =1;
-            } catch (SQLException e) {
-                e.printStackTrace();
+        if(title!=null && content!=null &&!title.equals("") && !content.equals("")){
+            HttpSession session = request.getSession(false);
+
+
+            if (session != null && session.getAttribute("userinfo") != null) {
+                UserInfo userInfo = (UserInfo) session.getAttribute("userinfo");
+                ArticleInfoDao articleInfoDao = new ArticleInfoDao();
+
+                try {
+                    succ = articleInfoDao.addArt(title, content, userInfo.getId());
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            } else {
+                msg="非登录状态！";
             }
+
         } else {
-            msg = "无效参数";
+            msg="错误参数";
         }
 
         //3 、返回结果
         HashMap<String,Object> result = new HashMap<>();
         result.put("succ",succ);
         result.put("msg",msg);
-        result.put("art",articleInfo);
         ResultJSONUtils.write(response,result);
 
     }

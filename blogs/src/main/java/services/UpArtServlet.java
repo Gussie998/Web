@@ -1,7 +1,6 @@
 package services;
 
 import dao.ArticleInfoDao;
-import models.ArticleInfo;
 import utils.ResultJSONUtils;
 
 import javax.servlet.ServletException;
@@ -15,11 +14,12 @@ import java.util.HashMap;
 
 /**
  * User:DELL
- * Date:2021-04-06
- * Time:21:30
+ * Date:2021-04-07
+ * Time:10:32
  */
-@WebServlet("/init")
-public class InitServlet extends HttpServlet {
+
+@WebServlet("/upart")
+public class UpArtServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         this.doGet(request, response);
@@ -29,27 +29,31 @@ public class InitServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int succ=-1;
         String msg="";
-        ArticleInfo articleInfo = null;
 
-        int id=Integer.parseInt(request.getParameter("id"));
+        int id = Integer.parseInt(request.getParameter("id")) ;
+        String title = request.getParameter("title");
+        String content = request.getParameter("content");
 
-        if(id>0){
+        if(id>0 && title!=null && content!=null
+        && !title.equals("") && !content.equals("")
+        ){
             ArticleInfoDao articleInfoDao = new ArticleInfoDao();
             try {
-                articleInfo = articleInfoDao.getArtById(id);
-                succ =1;
+                succ=articleInfoDao.upArt(id,title,content);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         } else {
-            msg = "无效参数";
+            msg="无效参数！";
         }
+
+
+
 
         //3 、返回结果
         HashMap<String,Object> result = new HashMap<>();
         result.put("succ",succ);
         result.put("msg",msg);
-        result.put("art",articleInfo);
         ResultJSONUtils.write(response,result);
 
     }

@@ -1,6 +1,7 @@
 package dao;
 
 import models.ArticleInfo;
+import sun.security.pkcs11.Secmod;
 import utils.DBUtils;
 
 import java.sql.Connection;
@@ -57,7 +58,7 @@ public class ArticleInfoDao {
 
     //通过文章id获取文章内容
     public ArticleInfo getArtById(int id) throws SQLException {
-        ArticleInfo articleInfo = null;
+        ArticleInfo articleInfo = new ArticleInfo();
         if(id>0){
             Connection connection = DBUtils.getConnection();
             String sql = "select * from articleinfo where id = ?";
@@ -67,11 +68,42 @@ public class ArticleInfoDao {
             if(resultSet.next()){
                 articleInfo.setId(resultSet.getInt("id"));
                 articleInfo.setTitle(resultSet.getString("title"));
-                articleInfo.setTitle(resultSet.getString("content"));
+                articleInfo.setContent(resultSet.getString("content"));
             }
             DBUtils.close(connection,statement,resultSet);
         }
 
         return articleInfo;
+    }
+
+
+    //修改文章
+    public int upArt(int id, String title, String content) throws SQLException {
+        int result =0;
+        Connection connection = DBUtils.getConnection();
+        String sql = "update articleinfo set title=?,content=? where id  =?";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        statement.setString(1,title);
+        statement.setString(2,content);
+        statement.setInt(3,id);
+        result=statement.executeUpdate();
+        DBUtils.close(connection,statement,null);
+
+        return result;
+
+    }
+
+    //增加文章
+    public int addArt(String title, String content, int uid) throws SQLException {
+        int result = 0;
+        Connection connection = DBUtils.getConnection();
+        String sql = "insert into articleinfo(title,content,uid) values (?,?,?)";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        statement.setString(1,title);
+        statement.setString(2,content);
+        statement.setInt(3,uid);
+        result=statement.executeUpdate();
+        DBUtils.close(connection,statement,null);
+        return result;
     }
 }

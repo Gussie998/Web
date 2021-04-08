@@ -25,20 +25,19 @@
             },function (data) {
                 if(data!=null && data.succ==1){
                     alert("success!");
+                    location.href="myarticle.html";
 
                 } else{
                     alert("error!"+data.msg);
                 }
 
-            })
+            });
 
         }
 
-
-
         jQuery(function () {
-            var params = location.search();
-            id=params.substring(1).script("=")[1];
+            var params = location.search;
+            id=params.substring(1).split("=")[1];
             jQuery.getJSON("init",{"id":id},function (data) {
                 if(data!=null && data.succ==1){
                     jQuery("#title").val(data.art.title);
