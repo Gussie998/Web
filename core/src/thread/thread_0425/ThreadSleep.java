@@ -23,24 +23,26 @@ public class ThreadSleep {
 
     public static void main(String[] args) throws InterruptedException {
         String c1="ABCD";
-        //String c2="ABCD";
 
         Thread thread = new Thread(()->{
             for (char item :c1.toCharArray()
                  ) {
-                System.out.print(item);
+                System.out.println(item);
+                System.out.println("name:"+ Thread.currentThread().getName());
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
+
         });
         thread.start();
         for (char item :c1.toCharArray()
              ) {
-            System.out.print(item);
-            Thread.sleep(1000);
+            System.out.println(item);
+            System.out.println("name:"+ Thread.currentThread().getName());
+            Thread.sleep(100);
 
         }
 
