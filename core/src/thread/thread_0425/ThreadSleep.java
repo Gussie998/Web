@@ -21,7 +21,7 @@ public class ThreadSleep {
         System.out.println("结束时间："+new Date());
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main2(String[] args) throws InterruptedException {
         String c1="ABCD";
 
         Thread thread = new Thread(()->{
@@ -46,5 +46,23 @@ public class ThreadSleep {
 
         }
 
+    }
+    public static void main(String[] args) throws InterruptedException {
+        for (int i = 0; i <10 ; i++) {
+            Thread t1 = new Thread(()->{
+                System.out.print("A");
+            });
+            Thread t2 = new Thread(()->{
+                System.out.print("B");
+            });Thread t3 = new Thread(()->{
+                System.out.print("C\n");
+            });
+            t1.start();
+            Thread.sleep(100);
+            t2.start();
+            Thread.sleep(100);
+            t3.start();
+            Thread.sleep(100);
+        }
     }
 }
