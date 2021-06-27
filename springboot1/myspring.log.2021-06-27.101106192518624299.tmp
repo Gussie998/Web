@@ -1,0 +1,81 @@
+2021-06-27 18:23:49.328 DEBUG 18124 --- [RMI TCP Connection(2)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(2)-192.168.140.100: name = "javax.management.ObjectName", codebase = ""
+2021-06-27 18:23:49.330 DEBUG 18124 --- [RMI TCP Connection(2)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(2)-192.168.140.100: name = "java.rmi.MarshalledObject", codebase = ""
+2021-06-27 18:23:49.337 DEBUG 18124 --- [RMI TCP Connection(2)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(2)-192.168.140.100: (port 61280) op = 80
+2021-06-27 18:23:49.338 DEBUG 18124 --- [RMI TCP Connection(2)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(2)-192.168.140.100: name = "javax.management.ObjectName", codebase = ""
+2021-06-27 18:23:49.360 DEBUG 18124 --- [RMI TCP Connection(2)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(2)-192.168.140.100: (port 61280) op = 82
+2021-06-27 18:23:49.360 DEBUG 18124 --- [RMI TCP Connection(2)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(2)-192.168.140.100: (port 61280) op = 80
+2021-06-27 18:23:49.963 DEBUG 18124 --- [RMI TCP Connection(2)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(2)-192.168.140.100: (port 61280) connection closed
+2021-06-27 18:23:49.963 DEBUG 18124 --- [RMI TCP Connection(2)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(2)-192.168.140.100: close connection
+2021-06-27 18:23:49.968 DEBUG 18124 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 61280) connection closed
+2021-06-27 18:23:49.969 DEBUG 18124 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: close connection
+2021-06-27 18:23:50.247 DEBUG 18124 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(3)-192.168.140.100: accepted socket from [192.168.140.100:55431]
+2021-06-27 18:23:50.248 DEBUG 18124 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(3)-192.168.140.100: (port 61280) op = 80
+2021-06-27 18:23:50.248 DEBUG 18124 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:23:50.249 DEBUG 18124 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:23:50.249 DEBUG 18124 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "java.rmi.server.UID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:23:50.250 DEBUG 18124 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:23:50.250 DEBUG 18124 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "[B", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:24:04.410 DEBUG 18124 --- [http-nio-8080-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8080-Acceptor] latch=1
+2021-06-27 18:24:04.410 DEBUG 18124 --- [http-nio-8080-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8080-Acceptor] latch=2
+2021-06-27 18:24:04.470 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2021-06-27 18:24:04.472 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@42c390cf:org.apache.tomcat.util.net.NioChannel@a20aee8:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:58387]], Read from buffer: [0]
+2021-06-27 18:24:04.472 DEBUG 18124 --- [http-nio-8080-exec-2] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@42c390cf:org.apache.tomcat.util.net.NioChannel@a20aee8:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:58387]], Read direct from socket: [728]
+2021-06-27 18:24:04.472 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /method/login HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
+sec-ch-ua-mobile: ?0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+
+]
+2021-06-27 18:24:04.509 DEBUG 18124 --- [http-nio-8080-exec-2] org.apache.tomcat.util.http.Parameters   : Set query string encoding to UTF-8
+2021-06-27 18:24:04.513 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.t.util.http.Rfc6265CookieProcessor   : Cookies: Parsing b[]: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+2021-06-27 18:24:04.518 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /method/login
+2021-06-27 18:24:04.518 DEBUG 18124 --- [http-nio-8080-exec-2] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2021-06-27 18:24:04.526 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.a.jaspic.AuthConfigFactoryImpl     : Loading persistent provider registrations from [C:\Users\DELL\AppData\Local\Temp\tomcat.8080.3324332185265937993\conf\jaspic-providers.xml]
+2021-06-27 18:24:04.527 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2021-06-27 18:24:04.530  INFO 18124 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-27 18:24:04.530  INFO 18124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-27 18:24:04.530 DEBUG 18124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-06-27 18:24:04.531 DEBUG 18124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-06-27 18:24:04.531 DEBUG 18124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-06-27 18:24:04.532 DEBUG 18124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@32ece286
+2021-06-27 18:24:04.532 DEBUG 18124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@42d5c016
+2021-06-27 18:24:04.532 DEBUG 18124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-06-27 18:24:04.532  INFO 18124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-06-27 18:24:04.553 DEBUG 18124 --- [http-nio-8080-exec-2] org.apache.tomcat.util.http.Parameters   : Set encoding to UTF-8
+2021-06-27 18:24:04.553 DEBUG 18124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/method/login", parameters={}
+2021-06-27 18:24:04.560 DEBUG 18124 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.MethodController#login(User, HttpServletRequest)
+2021-06-27 18:24:04.605  WARN 18124 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.Object com.example.demo.controller.MethodController.login(com.example.demo.model.User,javax.servlet.http.HttpServletRequest)]
+2021-06-27 18:24:04.606 DEBUG 18124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2021-06-27 18:24:04.609 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost]           : Processing ErrorPage[errorCode=0, location=/error]
+2021-06-27 18:24:04.620 DEBUG 18124 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2021-06-27 18:24:04.627 DEBUG 18124 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2021-06-27 18:24:04.639 DEBUG 18124 --- [http-nio-8080-exec-2] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.template.provider.cache' in PropertySource 'configurationProperties' with value of type String
+2021-06-27 18:24:04.641 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     findClass(freemarker.template.Configuration)
+2021-06-27 18:24:04.642 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:24:04.643 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     findClass(freemarker.template$Configuration)
+2021-06-27 18:24:04.644 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:24:04.645 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     findClass(com.samskivert.mustache.Template)
+2021-06-27 18:24:04.646 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:24:04.647 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     findClass(com.samskivert.mustache$Template)
+2021-06-27 18:24:04.648 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:24:04.650 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     findClass(groovy.text.TemplateEngine)
+2021-06-27 18:24:04.651 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:24:04.652 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     findClass(groovy.text$TemplateEngine)
+2021-06-27 18:24:04.653 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:24:04.654 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     findClass(org.thymeleaf.spring5.SpringTemplateEngine)
+2021-06-27 18:24:04.655 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:24:04.656 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     findClass(org.thymeleaf.spring5$SpringTemplateEngine)
+2021-06-27 18:24:04.658 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:24:04.659 DEBUG 18124 --- [http-nio-8080-exec-2] o.a.c.loader.WebappClassLoaderBase       :     findClass(org.apache.jasper.compiler.JspConfig)

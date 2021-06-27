@@ -1,0 +1,63 @@
+2021-06-27 18:36:40.204 DEBUG 14152 --- [http-nio-8080-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received []
+2021-06-27 18:36:40.219 DEBUG 14152 --- [http-nio-8080-exec-3] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@21585fc7:org.apache.tomcat.util.net.NioChannel@2f9fb59c:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:64408]], Status in: [OPEN_READ], State out: [OPEN]
+2021-06-27 18:36:40.231 DEBUG 14152 --- [http-nio-8080-exec-3] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@21585fc7:org.apache.tomcat.util.net.NioChannel@2f9fb59c:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:64408]]
+2021-06-27 18:36:40.234 DEBUG 14152 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [582]
+2021-06-27 18:36:40.235 DEBUG 14152 --- [http-nio-8080-exec-6] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@18ffd9fe:org.apache.tomcat.util.net.NioChannel@16382491:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59150]], Read from buffer: [0]
+2021-06-27 18:36:40.235 DEBUG 14152 --- [http-nio-8080-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@18ffd9fe:org.apache.tomcat.util.net.NioChannel@16382491:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59150]], Read direct from socket: [631]
+2021-06-27 18:36:40.235 DEBUG 14152 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received [GET /img/cat.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/css/conmmon.css
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+
+]
+2021-06-27 18:36:40.236 DEBUG 14152 --- [http-nio-8080-exec-6] o.a.t.util.http.Rfc6265CookieProcessor   : Cookies: Parsing b[]: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+2021-06-27 18:36:40.236 DEBUG 14152 --- [http-nio-8080-exec-6] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /img/cat.jpg
+2021-06-27 18:36:40.236 DEBUG 14152 --- [http-nio-8080-exec-6] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2021-06-27 18:36:40.237 DEBUG 14152 --- [http-nio-8080-exec-6] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2021-06-27 18:36:40.237 DEBUG 14152 --- [http-nio-8080-exec-6] org.apache.tomcat.util.http.Parameters   : Set encoding to UTF-8
+2021-06-27 18:36:40.237 DEBUG 14152 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/img/cat.jpg", parameters={}
+2021-06-27 18:36:40.238 DEBUG 14152 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-06-27 18:36:40.264 DEBUG 14152 --- [http-nio-8080-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Registered write interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@18ffd9fe:org.apache.tomcat.util.net.NioChannel@16382491:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59150]]
+2021-06-27 18:36:40.265 DEBUG 14152 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-27 18:36:40.266 DEBUG 14152 --- [http-nio-8080-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Registered write interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@18ffd9fe:org.apache.tomcat.util.net.NioChannel@16382491:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59150]]
+2021-06-27 18:36:40.266 DEBUG 14152 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [631]
+2021-06-27 18:36:40.266 DEBUG 14152 --- [http-nio-8080-exec-6] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@18ffd9fe:org.apache.tomcat.util.net.NioChannel@16382491:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59150]], Read from buffer: [0]
+2021-06-27 18:36:40.267 DEBUG 14152 --- [http-nio-8080-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@18ffd9fe:org.apache.tomcat.util.net.NioChannel@16382491:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59150]], Read direct from socket: [0]
+2021-06-27 18:36:40.267 DEBUG 14152 --- [http-nio-8080-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received []
+2021-06-27 18:36:40.267 DEBUG 14152 --- [http-nio-8080-exec-6] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@18ffd9fe:org.apache.tomcat.util.net.NioChannel@16382491:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59150]], Status in: [OPEN_READ], State out: [OPEN]
+2021-06-27 18:36:40.268 DEBUG 14152 --- [http-nio-8080-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@18ffd9fe:org.apache.tomcat.util.net.NioChannel@16382491:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59150]]
+2021-06-27 18:36:46.090 DEBUG 14152 --- [http-nio-8080-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [631]
+2021-06-27 18:36:46.091 DEBUG 14152 --- [http-nio-8080-exec-7] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@22eb31ed:org.apache.tomcat.util.net.NioChannel@356f0772:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:58273]], Read from buffer: [0]
+2021-06-27 18:36:46.090 DEBUG 14152 --- [http-nio-8080-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [628]
+2021-06-27 18:36:46.091 DEBUG 14152 --- [http-nio-8080-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [571]
+2021-06-27 18:36:46.093 DEBUG 14152 --- [http-nio-8080-exec-8] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@21585fc7:org.apache.tomcat.util.net.NioChannel@2f9fb59c:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:64408]], Read from buffer: [0]
+2021-06-27 18:36:46.093 DEBUG 14152 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [584]
+2021-06-27 18:36:46.093 DEBUG 14152 --- [http-nio-8080-exec-9] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@1ab4750d:org.apache.tomcat.util.net.NioChannel@1473882b:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:62791]], Read from buffer: [0]
+2021-06-27 18:36:46.093 DEBUG 14152 --- [http-nio-8080-exec-10] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@18ffd9fe:org.apache.tomcat.util.net.NioChannel@16382491:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59150]], Read from buffer: [0]
+2021-06-27 18:36:46.098 DEBUG 14152 --- [http-nio-8080-exec-10] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1319) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1207) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:805) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:360) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+

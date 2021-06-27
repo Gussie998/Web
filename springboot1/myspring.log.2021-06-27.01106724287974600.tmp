@@ -1,0 +1,106 @@
+2021-06-27 18:30:14.210 DEBUG 34736 --- [http-nio-8080-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8080-Acceptor] latch=1
+2021-06-27 18:30:14.212 DEBUG 34736 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [584]
+2021-06-27 18:30:14.217 DEBUG 34736 --- [http-nio-8080-exec-10] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@41b89bc4:org.apache.tomcat.util.net.NioChannel@363f7e29:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:52970]], Read from buffer: [0]
+2021-06-27 18:30:14.222 DEBUG 34736 --- [http-nio-8080-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@41b89bc4:org.apache.tomcat.util.net.NioChannel@363f7e29:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:52970]], Read direct from socket: [668]
+2021-06-27 18:30:14.222 DEBUG 34736 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received [GET /method/login?username=root&password=root HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+
+]
+2021-06-27 18:30:14.223 DEBUG 34736 --- [http-nio-8080-exec-10] o.a.t.util.http.Rfc6265CookieProcessor   : Cookies: Parsing b[]: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+2021-06-27 18:30:14.223 DEBUG 34736 --- [http-nio-8080-exec-10] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /method/login
+2021-06-27 18:30:14.223 DEBUG 34736 --- [http-nio-8080-exec-10] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2021-06-27 18:30:14.224 DEBUG 34736 --- [http-nio-8080-exec-10] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2021-06-27 18:30:14.225 DEBUG 34736 --- [http-nio-8080-exec-10] org.apache.tomcat.util.http.Parameters   : Set encoding to UTF-8
+2021-06-27 18:30:14.225 DEBUG 34736 --- [http-nio-8080-exec-10] org.apache.tomcat.util.http.Parameters   : Decoding query null UTF-8
+2021-06-27 18:30:14.225 DEBUG 34736 --- [http-nio-8080-exec-10] org.apache.tomcat.util.http.Parameters   : Start processing with input [username=root&password=root]
+2021-06-27 18:30:14.226 DEBUG 34736 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/method/login?username=root&password=root", parameters={masked}
+2021-06-27 18:30:14.227 DEBUG 34736 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.MethodController#login(User, HttpServletRequest)
+2021-06-27 18:30:14.233  WARN 34736 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.Object com.example.demo.controller.MethodController.login(com.example.demo.model.User,javax.servlet.http.HttpServletRequest)]
+2021-06-27 18:30:14.233 DEBUG 34736 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2021-06-27 18:30:14.233 DEBUG 34736 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost]           : Processing ErrorPage[errorCode=0, location=/error]
+2021-06-27 18:30:14.237 DEBUG 34736 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?username=root&password=root", parameters={masked}
+2021-06-27 18:30:14.237 DEBUG 34736 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-27 18:30:14.239 DEBUG 34736 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-27 18:30:14.240 DEBUG 34736 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Jun 27 18:30:14 CST 2021, status=400, error=Bad Request, trace=org.springframework.ht (truncated)...]
+2021-06-27 18:30:14.242 DEBUG 34736 --- [http-nio-8080-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Registered write interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@41b89bc4:org.apache.tomcat.util.net.NioChannel@363f7e29:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:52970]]
+2021-06-27 18:30:14.243 DEBUG 34736 --- [http-nio-8080-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Registered write interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@41b89bc4:org.apache.tomcat.util.net.NioChannel@363f7e29:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:52970]]
+2021-06-27 18:30:14.245 DEBUG 34736 --- [http-nio-8080-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Registered write interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@41b89bc4:org.apache.tomcat.util.net.NioChannel@363f7e29:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:52970]]
+2021-06-27 18:30:14.247 DEBUG 34736 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2021-06-27 18:30:14.248 DEBUG 34736 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    :  Disabling the response for further output
+2021-06-27 18:30:14.248 DEBUG 34736 --- [http-nio-8080-exec-10] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@41b89bc4:org.apache.tomcat.util.net.NioChannel@363f7e29:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:52970]], Status in: [OPEN_READ], State out: [CLOSED]
+2021-06-27 18:30:14.249 DEBUG 34736 --- [http-nio-8080-exec-10] o.apache.tomcat.util.threads.LimitLatch  : Counting down[http-nio-8080-exec-10] latch=1
+2021-06-27 18:30:14.249 DEBUG 34736 --- [http-nio-8080-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Calling [org.apache.tomcat.util.net.NioEndpoint@4f7f6c5b].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@41b89bc4:org.apache.tomcat.util.net.NioChannel@363f7e29:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:52970]])
+2021-06-27 18:30:16.469 DEBUG 34736 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1624789816464 sessioncount 0
+2021-06-27 18:30:16.469 DEBUG 34736 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 5 expired sessions: 0
+2021-06-27 18:31:16.535 DEBUG 34736 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1624789876534 sessioncount 0
+2021-06-27 18:31:16.536 DEBUG 34736 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 2 expired sessions: 0
+2021-06-27 18:32:16.609 DEBUG 34736 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1624789936609 sessioncount 0
+2021-06-27 18:32:16.611 DEBUG 34736 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2021-06-27 18:32:26.943 DEBUG 34736 --- [File Watcher] o.s.boot.devtools.restart.Restarter      : Restarting application
+2021-06-27 18:32:27.004 DEBUG 34736 --- [Thread-17] o.s.boot.devtools.restart.Restarter      : Stopping application
+2021-06-27 18:32:27.009 DEBUG 34736 --- [Thread-17] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e39a6e5, started on Sun Jun 27 18:29:10 CST 2021
+2021-06-27 18:32:27.012 DEBUG 34736 --- [Thread-17] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2021-06-27 18:32:27.030 DEBUG 34736 --- [Thread-17] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-06-27 18:32:27.034 DEBUG 34736 --- [Thread-17] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerGracefulShutdown' completed its stop procedure
+2021-06-27 18:32:27.034 DEBUG 34736 --- [Thread-17] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483646
+2021-06-27 18:32:27.543 DEBUG 34736 --- [Thread-17] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerStartStop' completed its stop procedure
+2021-06-27 18:32:27.574 DEBUG 34736 --- [Thread-17] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-06-27 18:32:27.577 DEBUG 34736 --- [Thread-17] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-27 18:32:27.790 DEBUG 34736 --- [Thread-17] o.s.boot.devtools.restart.Restarter      : Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7bd4fefd
+2021-06-27 18:32:27.790 DEBUG 34736 --- [Thread-17] o.s.boot.devtools.restart.Restarter      : Starting application com.example.demo.DemoApplication with URLs [file:/E:/Java_Code/Web/springboot1/target/classes/]
+2021-06-27 18:32:56.372 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 50556) op = 82
+2021-06-27 18:32:56.400 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 50556) op = 80
+2021-06-27 18:32:56.401 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 50556) op = 80
+2021-06-27 18:32:56.402 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:32:56.403 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:32:56.404 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.server.UID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:32:56.405 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:32:56.406 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:32:56.406 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "[B", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:32:56.407 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 50556) op = 84
+2021-06-27 18:32:56.408 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 50556) op = 80
+2021-06-27 18:32:56.409 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 50556) op = 80
+2021-06-27 18:32:56.409 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "javax.management.ObjectName", codebase = ""
+2021-06-27 18:32:56.415 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.server.call                      : RMI TCP Connection(1)-192.168.140.100: [192.168.140.100] exception: 
+
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095) ~[na:1.8.0_221]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:643) ~[na:1.8.0_221]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1445) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:639) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357) ~[na:1.8.0_221]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) [na:1.8.0_221]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) [na:1.8.0_221]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_221]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) [na:1.8.0_221]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_221]
+
+2021-06-27 18:32:56.418 DEBUG 15788 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 50556) op = 80

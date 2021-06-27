@@ -1,0 +1,153 @@
+2021-06-27 18:27:31.991 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
+2021-06-27 18:27:31.996 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'parameterNamesModule'
+2021-06-27 18:27:31.996 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+2021-06-27 18:27:32.002 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jsonComponentModule'
+2021-06-27 18:27:32.003 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+2021-06-27 18:27:32.023 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
+2021-06-27 18:27:32.073 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
+2021-06-27 18:27:32.090 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'applicationTaskExecutor'
+2021-06-27 18:27:32.090 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
+2021-06-27 18:27:32.095 DEBUG 11416 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-27 18:27:32.118 DEBUG 11416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-06-27 18:27:32.118 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 82
+2021-06-27 18:27:32.119 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 80
+2021-06-27 18:27:32.121 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 80
+2021-06-27 18:27:32.122 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:27:32.122 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:27:32.123 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.server.UID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:27:32.123 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:27:32.124 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:27:32.124 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "[B", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:27:32.125 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 84
+2021-06-27 18:27:32.126 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 80
+2021-06-27 18:27:32.127 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 80
+2021-06-27 18:27:32.127 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "javax.management.ObjectName", codebase = ""
+2021-06-27 18:27:32.128 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.server.call                      : RMI TCP Connection(1)-192.168.140.100: [192.168.140.100] exception: 
+
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095) ~[na:1.8.0_221]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:643) ~[na:1.8.0_221]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1445) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:639) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357) ~[na:1.8.0_221]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) [na:1.8.0_221]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) [na:1.8.0_221]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_221]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) [na:1.8.0_221]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_221]
+
+2021-06-27 18:27:32.131 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 80
+2021-06-27 18:27:32.154 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+2021-06-27 18:27:32.156 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2021-06-27 18:27:32.166 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-27 18:27:32.166 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-27 18:27:32.166 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-27 18:27:32.167 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-27 18:27:32.167 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-27 18:27:32.167 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-27 18:27:32.229 DEBUG 11416 --- [restartedMain] _.s.web.servlet.HandlerMapping.Mappings  : 
+	c.e.d.c.MVCController:
+	{ [/mvc/index]}: getIndex()
+	{ [/mvc/index7]}: getIndex7()
+2021-06-27 18:27:32.234 DEBUG 11416 --- [restartedMain] _.s.web.servlet.HandlerMapping.Mappings  : 
+	c.e.d.c.MethodController:
+	{GET [/method/people/{pid}/animal/{aid}]}: method1(String,String)
+	{ [/method/login]}: login(User,HttpServletRequest)
+2021-06-27 18:27:32.238 DEBUG 11416 --- [restartedMain] _.s.web.servlet.HandlerMapping.Mappings  : 
+	c.e.d.c.UserController:
+	{ [/user/index]}: getIndex(String)
+2021-06-27 18:27:32.244 DEBUG 11416 --- [restartedMain] _.s.web.servlet.HandlerMapping.Mappings  : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-06-27 18:27:32.250 DEBUG 11416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2021-06-27 18:27:32.251 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'welcomePageHandlerMapping'
+2021-06-27 18:27:32.251 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@23212cfd'
+2021-06-27 18:27:32.251 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-27 18:27:32.251 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-27 18:27:32.253  INFO 11416 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-06-27 18:27:32.260 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'localeResolver'
+2021-06-27 18:27:32.264 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'themeResolver'
+2021-06-27 18:27:32.266 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'flashMapManager'
+2021-06-27 18:27:32.271 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcPatternParser'
+2021-06-27 18:27:32.274 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcUrlPathHelper'
+2021-06-27 18:27:32.281 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcPathMatcher'
+2021-06-27 18:27:32.284 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+2021-06-27 18:27:32.288 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-27 18:27:32.288 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-27 18:27:32.289 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'beanNameHandlerMapping'
+2021-06-27 18:27:32.291 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-27 18:27:32.291 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-27 18:27:32.304 DEBUG 11416 --- [restartedMain] _.s.web.servlet.HandlerMapping.Mappings  : 'beanNameHandlerMapping' {}
+2021-06-27 18:27:32.305 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'routerFunctionMapping'
+2021-06-27 18:27:32.307 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+2021-06-27 18:27:32.308 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-27 18:27:32.342 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'resourceHandlerMapping'
+2021-06-27 18:27:32.345 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2021-06-27 18:27:32.346 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+2021-06-27 18:27:32.347 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2021-06-27 18:27:32.552 DEBUG 11416 --- [restartedMain] _.s.web.servlet.HandlerMapping.Mappings  : 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2021-06-27 18:27:32.552 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+2021-06-27 18:27:32.553 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'handlerFunctionAdapter'
+2021-06-27 18:27:32.557 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2021-06-27 18:27:32.559 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+2021-06-27 18:27:32.559 DEBUG 11416 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter'
+2021-06-27 18:27:32.648 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 82
+2021-06-27 18:27:32.648 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 80
+2021-06-27 18:27:32.650 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 82
+2021-06-27 18:27:32.650 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 80
+2021-06-27 18:27:32.650 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:27:32.650 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:27:32.651 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.server.UID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:27:32.651 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:27:32.651 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:27:32.651 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "[B", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:27:32.652 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 84
+2021-06-27 18:27:32.653 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 80
+2021-06-27 18:27:32.653 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 80
+2021-06-27 18:27:32.653 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "javax.management.ObjectName", codebase = ""
+2021-06-27 18:27:32.654 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.server.call                      : RMI TCP Connection(1)-192.168.140.100: [192.168.140.100] exception: 
+
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095) ~[na:1.8.0_221]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:643) ~[na:1.8.0_221]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1445) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:639) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357) ~[na:1.8.0_221]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) [na:1.8.0_221]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) [na:1.8.0_221]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_221]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) [na:1.8.0_221]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_221]
+
+2021-06-27 18:27:32.656 DEBUG 11416 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 59859) op = 80

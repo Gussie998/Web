@@ -1,0 +1,65 @@
+2021-06-27 18:20:41.039 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "[B", codebase = ""
+2021-06-27 18:20:41.042 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "[Ljava.lang.String;", codebase = ""
+2021-06-27 18:20:41.042 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "[Ljava.lang.String;", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@3cd1f1c8
+2021-06-27 18:20:41.043 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(3)-192.168.140.100: (port 64948) op = 80
+2021-06-27 18:20:41.044 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "javax.management.ObjectName", codebase = ""
+2021-06-27 18:20:41.045 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "java.rmi.MarshalledObject", codebase = ""
+2021-06-27 18:20:41.046 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "[B", codebase = ""
+2021-06-27 18:20:41.046 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "[Ljava.lang.String;", codebase = ""
+2021-06-27 18:20:41.046 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "[Ljava.lang.String;", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@3cd1f1c8
+2021-06-27 18:20:41.048 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(3)-192.168.140.100: (port 64948) op = 80
+2021-06-27 18:20:41.048 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "javax.management.ObjectName", codebase = ""
+2021-06-27 18:20:41.048 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "java.rmi.MarshalledObject", codebase = ""
+2021-06-27 18:20:41.049 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "[B", codebase = ""
+2021-06-27 18:20:41.049 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "[Ljava.lang.String;", codebase = ""
+2021-06-27 18:20:41.049 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(3)-192.168.140.100: name = "[Ljava.lang.String;", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@3cd1f1c8
+2021-06-27 18:20:41.051 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(3)-192.168.140.100: (port 64948) op = 80
+2021-06-27 18:20:41.548 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(3)-192.168.140.100: (port 64948) connection closed
+2021-06-27 18:20:41.548 DEBUG 3108 --- [RMI TCP Connection(3)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(3)-192.168.140.100: close connection
+2021-06-27 18:20:41.560 DEBUG 3108 --- [RMI TCP Connection(2)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(2)-192.168.140.100: (port 64948) connection closed
+2021-06-27 18:20:41.575 DEBUG 3108 --- [RMI TCP Connection(2)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(2)-192.168.140.100: close connection
+2021-06-27 18:20:41.561 DEBUG 3108 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 64948) connection closed
+2021-06-27 18:20:41.584 DEBUG 3108 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: close connection
+2021-06-27 18:20:42.164 DEBUG 3108 --- [RMI TCP Connection(4)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(4)-192.168.140.100: accepted socket from [192.168.140.100:57363]
+2021-06-27 18:20:42.168 DEBUG 3108 --- [RMI TCP Connection(4)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(4)-192.168.140.100: (port 64948) op = 80
+2021-06-27 18:20:42.169 DEBUG 3108 --- [RMI TCP Connection(4)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(4)-192.168.140.100: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@3cd1f1c8
+2021-06-27 18:20:42.171 DEBUG 3108 --- [RMI TCP Connection(4)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(4)-192.168.140.100: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@3cd1f1c8
+2021-06-27 18:20:42.172 DEBUG 3108 --- [RMI TCP Connection(4)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(4)-192.168.140.100: name = "java.rmi.server.UID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@3cd1f1c8
+2021-06-27 18:20:42.173 DEBUG 3108 --- [RMI TCP Connection(4)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(4)-192.168.140.100: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@3cd1f1c8
+2021-06-27 18:20:42.174 DEBUG 3108 --- [RMI TCP Connection(4)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(4)-192.168.140.100: name = "[B", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@3cd1f1c8
+2021-06-27 18:21:05.158 DEBUG 3108 --- [RMI TCP Connection(4)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(4)-192.168.140.100: (port 64948) connection closed
+2021-06-27 18:21:05.158 DEBUG 3108 --- [RMI TCP Connection(4)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(4)-192.168.140.100: close connection
+2021-06-27 18:21:15.801 DEBUG 3108 --- [http-nio-8080-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8080-Acceptor] latch=1
+2021-06-27 18:21:15.803 DEBUG 3108 --- [http-nio-8080-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8080-Acceptor] latch=2
+2021-06-27 18:21:15.908 DEBUG 3108 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2021-06-27 18:21:15.909 DEBUG 3108 --- [http-nio-8080-exec-1] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@38a6bf48:org.apache.tomcat.util.net.NioChannel@79e56651:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:63037]], Read from buffer: [0]
+2021-06-27 18:21:15.910 DEBUG 3108 --- [http-nio-8080-exec-1] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@38a6bf48:org.apache.tomcat.util.net.NioChannel@79e56651:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:63037]], Read direct from socket: [726]
+2021-06-27 18:21:15.910 DEBUG 3108 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET /login.html HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
+sec-ch-ua-mobile: ?0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+
+]
+2021-06-27 18:21:15.948 DEBUG 3108 --- [http-nio-8080-exec-1] org.apache.tomcat.util.http.Parameters   : Set query string encoding to UTF-8
+2021-06-27 18:21:15.953 DEBUG 3108 --- [http-nio-8080-exec-1] o.a.t.util.http.Rfc6265CookieProcessor   : Cookies: Parsing b[]: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+2021-06-27 18:21:15.960 DEBUG 3108 --- [http-nio-8080-exec-1] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /login.html
+2021-06-27 18:21:15.961 DEBUG 3108 --- [http-nio-8080-exec-1] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2021-06-27 18:21:15.971 DEBUG 3108 --- [http-nio-8080-exec-1] o.a.c.a.jaspic.AuthConfigFactoryImpl     : Loading persistent provider registrations from [C:\Users\DELL\AppData\Local\Temp\tomcat.8080.2367492520060737831\conf\jaspic-providers.xml]
+2021-06-27 18:21:15.972 DEBUG 3108 --- [http-nio-8080-exec-1] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2021-06-27 18:21:15.979  INFO 3108 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-27 18:21:15.979  INFO 3108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-27 18:21:15.980 DEBUG 3108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-06-27 18:21:15.980 DEBUG 3108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-06-27 18:21:15.980 DEBUG 3108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver

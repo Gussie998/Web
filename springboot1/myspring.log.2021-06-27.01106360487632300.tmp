@@ -1,0 +1,67 @@
+2021-06-27 18:24:47.727 DEBUG 18124 --- [http-nio-8080-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Calling [org.apache.tomcat.util.net.NioEndpoint@1366007d].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@3647c574:org.apache.tomcat.util.net.NioChannel@694eb67:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:50182]])
+2021-06-27 18:24:47.726 DEBUG 18124 --- [http-nio-8080-exec-5] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@40cf2c30:org.apache.tomcat.util.net.NioChannel@a20aee8:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59511]], Status in: [OPEN_READ], State out: [CLOSED]
+2021-06-27 18:24:47.731 DEBUG 18124 --- [http-nio-8080-exec-5] o.apache.tomcat.util.threads.LimitLatch  : Counting down[http-nio-8080-exec-5] latch=1
+2021-06-27 18:24:47.731 DEBUG 18124 --- [http-nio-8080-exec-5] org.apache.tomcat.util.net.NioEndpoint   : Calling [org.apache.tomcat.util.net.NioEndpoint@1366007d].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@40cf2c30:org.apache.tomcat.util.net.NioChannel@a20aee8:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59511]])
+2021-06-27 18:24:47.840 DEBUG 18124 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1624789487838 sessioncount 0
+2021-06-27 18:24:47.841 DEBUG 18124 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 3 expired sessions: 0
+2021-06-27 18:25:47.917 DEBUG 18124 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1624789547910 sessioncount 0
+2021-06-27 18:25:47.923 DEBUG 18124 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 12 expired sessions: 0
+2021-06-27 18:26:51.983  INFO 33560 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 1.8.0_221 on DESKTOP-N1EM8HA with PID 33560 (E:\Java_Code\Web\springboot1\target\classes started by DELL in E:\Java_Code\Web\springboot1)
+2021-06-27 18:26:52.044 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 52925) op = 82
+2021-06-27 18:26:52.101 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 52925) op = 80
+2021-06-27 18:26:52.101 DEBUG 33560 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.4.8, Spring v5.3.8
+2021-06-27 18:26:52.101  INFO 33560 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2021-06-27 18:26:52.102 DEBUG 33560 --- [restartedMain] o.s.boot.SpringApplication               : Loading source class com.example.demo.DemoApplication
+2021-06-27 18:26:52.102 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 52925) op = 80
+2021-06-27 18:26:52.103 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:26:52.104 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:26:52.104 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.server.UID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:26:52.105 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:26:52.106 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:26:52.107 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "[B", codebase = "", defaultLoader = sun.misc.Launcher$ExtClassLoader@7cef4e59
+2021-06-27 18:26:52.108 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 52925) op = 84
+2021-06-27 18:26:52.109 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 52925) op = 80
+2021-06-27 18:26:52.110 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 52925) op = 80
+2021-06-27 18:26:52.111 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.loader                           : RMI TCP Connection(1)-192.168.140.100: name = "javax.management.ObjectName", codebase = ""
+2021-06-27 18:26:52.116 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.server.call                      : RMI TCP Connection(1)-192.168.140.100: [192.168.140.100] exception: 
+
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095) ~[na:1.8.0_221]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:643) ~[na:1.8.0_221]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1445) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401) ~[na:1.8.0_221]
+	at javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:639) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357) ~[na:1.8.0_221]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) [na:1.8.0_221]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) [na:1.8.0_221]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_221]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) [na:1.8.0_221]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_221]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_221]
+
+2021-06-27 18:26:52.119 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 52925) op = 80
+2021-06-27 18:26:52.192 DEBUG 33560 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : Matching URLs for reloading : [file:/E:/Java_Code/Web/springboot1/target/classes/]
+2021-06-27 18:26:52.192 DEBUG 33560 --- [restartedMain] o.s.b.d.settings.DevToolsSettings        : Included patterns for restart : []
+2021-06-27 18:26:52.193 DEBUG 33560 --- [restartedMain] o.s.b.d.settings.DevToolsSettings        : Excluded patterns for restart : [/spring-boot-actuator/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot/(bin|build|out)/, /spring-boot-starter-[\w-]+/, /spring-boot-autoconfigure/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/]
+2021-06-27 18:26:52.193  INFO 33560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-27 18:26:52.193  INFO 33560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-27 18:26:52.195 DEBUG 33560 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ef6e6bd
+2021-06-27 18:26:52.240 DEBUG 33560 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2021-06-27 18:26:52.264 DEBUG 33560 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2021-06-27 18:26:52.428 DEBUG 33560 --- [restartedMain] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [E:\Java_Code\Web\springboot1\target\classes\com\example\demo\controller\MVCController.class]
+2021-06-27 18:26:52.462 DEBUG 33560 --- [restartedMain] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [E:\Java_Code\Web\springboot1\target\classes\com\example\demo\controller\MethodController.class]
+2021-06-27 18:26:52.485 DEBUG 33560 --- [restartedMain] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [E:\Java_Code\Web\springboot1\target\classes\com\example\demo\controller\UserController.class]
+2021-06-27 18:26:52.627 DEBUG 33560 --- [RMI TCP Connection(1)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(1)-192.168.140.100: (port 52925) op = 82

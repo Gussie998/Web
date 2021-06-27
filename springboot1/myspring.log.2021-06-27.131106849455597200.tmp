@@ -1,0 +1,74 @@
+2021-06-27 18:33:25.715 DEBUG 15788 --- [http-nio-8080-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8080-Acceptor] latch=1
+2021-06-27 18:33:25.717 DEBUG 15788 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [571]
+2021-06-27 18:33:25.720 DEBUG 15788 --- [http-nio-8080-exec-10] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@5a6647cc:org.apache.tomcat.util.net.NioChannel@1d61babf:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:58005]], Read from buffer: [0]
+2021-06-27 18:33:25.724 DEBUG 15788 --- [http-nio-8080-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@5a6647cc:org.apache.tomcat.util.net.NioChannel@1d61babf:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:58005]], Read direct from socket: [668]
+2021-06-27 18:33:25.724 DEBUG 15788 --- [http-nio-8080-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received [GET /method/login?username=root&password=root HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+
+]
+2021-06-27 18:33:25.725 DEBUG 15788 --- [http-nio-8080-exec-10] o.a.t.util.http.Rfc6265CookieProcessor   : Cookies: Parsing b[]: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+2021-06-27 18:33:25.726 DEBUG 15788 --- [http-nio-8080-exec-10] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /method/login
+2021-06-27 18:33:25.726 DEBUG 15788 --- [http-nio-8080-exec-10] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2021-06-27 18:33:25.726 DEBUG 15788 --- [http-nio-8080-exec-10] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2021-06-27 18:33:25.728 DEBUG 15788 --- [http-nio-8080-exec-10] org.apache.tomcat.util.http.Parameters   : Set encoding to UTF-8
+2021-06-27 18:33:25.728 DEBUG 15788 --- [http-nio-8080-exec-10] org.apache.tomcat.util.http.Parameters   : Decoding query null UTF-8
+2021-06-27 18:33:25.728 DEBUG 15788 --- [http-nio-8080-exec-10] org.apache.tomcat.util.http.Parameters   : Start processing with input [username=root&password=root]
+2021-06-27 18:33:25.729 DEBUG 15788 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/method/login?username=root&password=root", parameters={masked}
+2021-06-27 18:33:25.729 DEBUG 15788 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controller.MethodController#login(User, HttpServletRequest)
+2021-06-27 18:33:25.766  WARN 15788 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.Object com.example.demo.controller.MethodController.login(com.example.demo.model.User,javax.servlet.http.HttpServletRequest)]
+2021-06-27 18:33:25.766 DEBUG 15788 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2021-06-27 18:33:25.767 DEBUG 15788 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost]           : Processing ErrorPage[errorCode=0, location=/error]
+2021-06-27 18:33:25.778 DEBUG 15788 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?username=root&password=root", parameters={masked}
+2021-06-27 18:33:25.781 DEBUG 15788 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-27 18:33:25.824 DEBUG 15788 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-27 18:33:25.825 DEBUG 15788 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Jun 27 18:33:25 CST 2021, status=400, error=Bad Request, trace=org.springframework.ht (truncated)...]
+2021-06-27 18:33:25.882 DEBUG 15788 --- [http-nio-8080-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Registered write interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@5a6647cc:org.apache.tomcat.util.net.NioChannel@1d61babf:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:58005]]
+2021-06-27 18:33:25.884 DEBUG 15788 --- [http-nio-8080-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Registered write interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@5a6647cc:org.apache.tomcat.util.net.NioChannel@1d61babf:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:58005]]
+2021-06-27 18:33:25.888 DEBUG 15788 --- [http-nio-8080-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Registered write interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@5a6647cc:org.apache.tomcat.util.net.NioChannel@1d61babf:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:58005]]
+2021-06-27 18:33:25.890 DEBUG 15788 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2021-06-27 18:33:25.891 DEBUG 15788 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    :  Disabling the response for further output
+2021-06-27 18:33:25.893 DEBUG 15788 --- [http-nio-8080-exec-10] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@5a6647cc:org.apache.tomcat.util.net.NioChannel@1d61babf:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:58005]], Status in: [OPEN_READ], State out: [CLOSED]
+2021-06-27 18:33:25.893 DEBUG 15788 --- [http-nio-8080-exec-10] o.apache.tomcat.util.threads.LimitLatch  : Counting down[http-nio-8080-exec-10] latch=1
+2021-06-27 18:33:25.893 DEBUG 15788 --- [http-nio-8080-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Calling [org.apache.tomcat.util.net.NioEndpoint@20281c2e].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@5a6647cc:org.apache.tomcat.util.net.NioChannel@1d61babf:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:58005]])
+2021-06-27 18:33:40.305 DEBUG 15788 --- [RMI TCP Connection(4)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(4)-192.168.140.100: (port 50556) connection closed
+2021-06-27 18:33:40.305 DEBUG 15788 --- [RMI TCP Connection(4)-192.168.140.100] sun.rmi.transport.tcp                    : RMI TCP Connection(4)-192.168.140.100: close connection
+2021-06-27 18:33:59.228 DEBUG 15788 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1624790039224 sessioncount 0
+2021-06-27 18:33:59.228 DEBUG 15788 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 4 expired sessions: 0
+2021-06-27 18:34:59.289 DEBUG 15788 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1624790099289 sessioncount 0
+2021-06-27 18:34:59.290 DEBUG 15788 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2021-06-27 18:35:01.579 DEBUG 15788 --- [http-nio-8080-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8080-Acceptor] latch=1
+2021-06-27 18:35:01.579 DEBUG 15788 --- [http-nio-8080-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8080-Acceptor] latch=2
+2021-06-27 18:35:01.593 DEBUG 15788 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [668]
+2021-06-27 18:35:01.594 DEBUG 15788 --- [http-nio-8080-exec-1] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@5835578d:org.apache.tomcat.util.net.NioChannel@6b2e3da9:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:50570]], Read from buffer: [0]
+2021-06-27 18:35:01.594 DEBUG 15788 --- [http-nio-8080-exec-1] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@5835578d:org.apache.tomcat.util.net.NioChannel@6b2e3da9:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:50570]], Read direct from socket: [707]
+2021-06-27 18:35:01.594 DEBUG 15788 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [GET /method/login.html HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
+sec-ch-ua-mobile: ?0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+
+]
+2021-06-27 18:35:01.595 DEBUG 15788 --- [http-nio-8080-exec-1] o.a.t.util.http.Rfc6265CookieProcessor   : Cookies: Parsing b[]: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe

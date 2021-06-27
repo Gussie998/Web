@@ -1,0 +1,95 @@
+2021-06-27 18:09:38.452 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(freemarker.template.Configuration)
+2021-06-27 18:09:38.455 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.455 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(freemarker.template$Configuration)
+2021-06-27 18:09:38.457 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.458 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(com.samskivert.mustache.Template)
+2021-06-27 18:09:38.460 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.461 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(com.samskivert.mustache$Template)
+2021-06-27 18:09:38.462 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.463 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(groovy.text.TemplateEngine)
+2021-06-27 18:09:38.464 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.465 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(groovy.text$TemplateEngine)
+2021-06-27 18:09:38.467 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.467 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(org.thymeleaf.spring5.SpringTemplateEngine)
+2021-06-27 18:09:38.468 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.469 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(org.thymeleaf.spring5$SpringTemplateEngine)
+2021-06-27 18:09:38.470 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.470 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(org.apache.jasper.compiler.JspConfig)
+2021-06-27 18:09:38.473 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.474 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(org.apache.jasper.compiler$JspConfig)
+2021-06-27 18:09:38.475 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.475 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       : getResource(META-INF/resources/error/400.html)
+2021-06-27 18:09:38.476 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   Delegating to parent classloader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4b810fab
+2021-06-27 18:09:38.477 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   --> Resource not found, returning null
+2021-06-27 18:09:38.477 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       : getResource(resources/error/400.html)
+2021-06-27 18:09:38.477 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   Delegating to parent classloader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4b810fab
+2021-06-27 18:09:38.477 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   --> Resource not found, returning null
+2021-06-27 18:09:38.478 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       : getResource(static/error/400.html)
+2021-06-27 18:09:38.478 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   Delegating to parent classloader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4b810fab
+2021-06-27 18:09:38.478 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   --> Resource not found, returning null
+2021-06-27 18:09:38.479 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       : getResource(public/error/400.html)
+2021-06-27 18:09:38.479 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   Delegating to parent classloader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4b810fab
+2021-06-27 18:09:38.479 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   --> Resource not found, returning null
+2021-06-27 18:09:38.479 DEBUG 17548 --- [http-nio-8080-exec-1] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.template.provider.cache' in PropertySource 'configurationProperties' with value of type String
+2021-06-27 18:09:38.480 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(freemarker.template.Configuration)
+2021-06-27 18:09:38.480 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.481 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(freemarker.template$Configuration)
+2021-06-27 18:09:38.482 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.484 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(com.samskivert.mustache.Template)
+2021-06-27 18:09:38.485 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.486 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(com.samskivert.mustache$Template)
+2021-06-27 18:09:38.487 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.487 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(groovy.text.TemplateEngine)
+2021-06-27 18:09:38.489 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.490 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(groovy.text$TemplateEngine)
+2021-06-27 18:09:38.490 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.491 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(org.thymeleaf.spring5.SpringTemplateEngine)
+2021-06-27 18:09:38.491 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.492 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(org.thymeleaf.spring5$SpringTemplateEngine)
+2021-06-27 18:09:38.493 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.494 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(org.apache.jasper.compiler.JspConfig)
+2021-06-27 18:09:38.495 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.496 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     findClass(org.apache.jasper.compiler$JspConfig)
+2021-06-27 18:09:38.497 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :     --> Returning ClassNotFoundException
+2021-06-27 18:09:38.498 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       : getResource(META-INF/resources/error/4xx.html)
+2021-06-27 18:09:38.498 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   Delegating to parent classloader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4b810fab
+2021-06-27 18:09:38.499 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   --> Resource not found, returning null
+2021-06-27 18:09:38.500 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       : getResource(resources/error/4xx.html)
+2021-06-27 18:09:38.500 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   Delegating to parent classloader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4b810fab
+2021-06-27 18:09:38.501 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   --> Resource not found, returning null
+2021-06-27 18:09:38.501 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       : getResource(static/error/4xx.html)
+2021-06-27 18:09:38.502 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   Delegating to parent classloader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4b810fab
+2021-06-27 18:09:38.504 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   --> Resource not found, returning null
+2021-06-27 18:09:38.505 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       : getResource(public/error/4xx.html)
+2021-06-27 18:09:38.505 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   Delegating to parent classloader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4b810fab
+2021-06-27 18:09:38.506 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.loader.WebappClassLoaderBase       :   --> Resource not found, returning null
+2021-06-27 18:09:38.518 DEBUG 17548 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2021-06-27 18:09:38.529 DEBUG 17548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2021-06-27 18:09:38.530 DEBUG 17548 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    :  Disabling the response for further output
+2021-06-27 18:09:38.535 DEBUG 17548 --- [http-nio-8080-exec-1] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@1aaeeeb1:org.apache.tomcat.util.net.NioChannel@4bef2abb:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:50540]], Status in: [OPEN_READ], State out: [CLOSED]
+2021-06-27 18:09:38.536 DEBUG 17548 --- [http-nio-8080-exec-1] o.apache.tomcat.util.threads.LimitLatch  : Counting down[http-nio-8080-exec-1] latch=2
+2021-06-27 18:09:38.537 DEBUG 17548 --- [http-nio-8080-exec-1] org.apache.tomcat.util.net.NioEndpoint   : Calling [org.apache.tomcat.util.net.NioEndpoint@3706c3fe].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@1aaeeeb1:org.apache.tomcat.util.net.NioChannel@4bef2abb:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:50540]])
+2021-06-27 18:09:38.811 DEBUG 17548 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [702]
+2021-06-27 18:09:38.811 DEBUG 17548 --- [http-nio-8080-exec-2] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@64fce80:org.apache.tomcat.util.net.NioChannel@8883039:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59815]], Read from buffer: [0]
+2021-06-27 18:09:38.812 DEBUG 17548 --- [http-nio-8080-exec-2] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@64fce80:org.apache.tomcat.util.net.NioChannel@8883039:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8080 remote=/0:0:0:0:0:0:0:1:59815]], Read direct from socket: [628]
+2021-06-27 18:09:38.812 DEBUG 17548 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8080/method/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+
+]
+2021-06-27 18:09:38.813 DEBUG 17548 --- [http-nio-8080-exec-2] o.a.t.util.http.Rfc6265CookieProcessor   : Cookies: Parsing b[]: Idea-5c1ce8bf=b5f1c14b-9e66-4ba9-8751-1586029817fe
+2021-06-27 18:09:38.813 DEBUG 17548 --- [http-nio-8080-exec-2] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /favicon.ico
+2021-06-27 18:09:38.813 DEBUG 17548 --- [http-nio-8080-exec-2] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2021-06-27 18:09:38.813 DEBUG 17548 --- [http-nio-8080-exec-2] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2021-06-27 18:09:38.814 DEBUG 17548 --- [http-nio-8080-exec-2] org.apache.tomcat.util.http.Parameters   : Set encoding to UTF-8
