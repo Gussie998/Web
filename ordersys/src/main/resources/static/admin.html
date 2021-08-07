@@ -36,18 +36,18 @@
                     <v-icon>mdi-account</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
-                    <v-list-item-title>xxx 管理员您好!</v-list-item-title>
+                    <v-list-item-title>{{login.inputUsername}}管理员您好!</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
-            <v-list-item link>
+            <v-list-item link v-on:click="status = 'dishesPage'">
                 <v-list-item-action>
                     <v-icon>mdi-cart-outline</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
-                    <v-list-item-title>查看菜品</v-list-item-title>
+                    <v-list-item-title >查看菜品</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
-            <v-list-item link>
+            <v-list-item link v-on:click="showOrder">
                 <v-list-item-action>
                     <v-icon>mdi-cart-outline</v-icon>
                 </v-list-item-action>
@@ -55,12 +55,12 @@
                     <v-list-item-title>查看订单</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
-            <v-list-item link>
-                <v-list-item-action>
+            <v-list-item link >
+                <v-list-item-action v-on:click="logout">
                     <v-icon>mdi-logout</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
-                    <v-list-item-title>退出登陆</v-list-item-title>
+                    <v-list-item-title >退出登陆</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
         </v-list>
@@ -87,14 +87,14 @@
                     <tr v-for="dish in dishes">
                         <td>
                             <v-icon>mdi-food</v-icon>
-                            香菜
+                            {{dish.name}}
                         </td>
                         <td>
                             <v-icon>mdi-cash</v-icon>
-                            10.00
+                            {{dish.price}}
                         </td>
                         <td>
-                            <v-btn color="primary">删除</v-btn>
+                            <v-btn color="primary" v-on:click="del(dish.id)">删除</v-btn>
                         </td>
                     </tr>
                     </tbody>
@@ -104,7 +104,7 @@
                 <v-col :col="11">
                 </v-col>
                 <v-col :cols="2">
-                    <v-btn color="primary" block>新增菜品</v-btn>
+                    <v-btn color="primary" block v-on:click="showAddDish=true">新增菜品</v-btn>
                 </v-col>
             </v-row>
 
@@ -122,14 +122,14 @@
                     </thead>
                     <tbody>
                     <tr v-for="order in orders">
-                        <td>1</td>
-                        <td>小明</td>
+                        <td>{{order.id}}</td>
+                        <td>{{order.uname}}</td>
                         <td>
-                            <v-switch></v-switch>
+                            <v-switch v-model="order.status" v-on:click="upStatus(order.id,order.status)"></v-switch>
                         </td>
-                        <td>2021-10-10 12:13:13</td>
+                        <td>{{order.createtime}}</td>
                         <td>
-                            <v-btn color='primary'>查看详情</v-btn>
+                            <v-btn color='primary' v-on:click="detail(order.id)">查看详情</v-btn>
                         </td>
                     </tr>
                     </tbody>
@@ -163,10 +163,10 @@
                                 </v-row>
                                 <v-row>
                                     <v-col cols="12" sm="6">
-                                        <v-btn color="primary" block>登陆</v-btn>
+                                        <v-btn color="primary" block v-on:click="userLogin">登陆</v-btn>
                                     </v-col>
                                     <v-col cols="12" sm="6">
-                                        <v-btn color="primary" block>取消
+                                        <v-btn color="primary" block v-on:click="login.showLoginDialog=false">取消
                                         </v-btn>
                                     </v-col>
                                 </v-row>
@@ -187,14 +187,14 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>香菜</td>
-                                <td>10.00</td>
+                            <tr v-for="dish in curOrder">
+                                <td>{{dish.dish.name}}</td>
+                                <td>{{dish.dish.price}}</td>
                             </tr>
                             <tr>
-                                <td>总金额: 10.00</td>
+                                <td>总金额: {{totalPrice()}}</td>
                                 <td>
-                                    <v-btn color="primary">关闭</v-btn>
+                                    <v-btn color="primary" v-on:click="showCurOrder=false">关闭</v-btn>
                                 </td>
                             </tr>
                             </tbody>
@@ -269,11 +269,189 @@
             },
         },
         methods: {
+            //用户登录
+            userLogin(){
+                let username =app. login.inputUsername;
+                let  password = app. login.inputPassword;
+                if(username==""){
+                    alert("请先输入用户名！");
+                    return false;
+                }
+                if(password==""){
+                    alert("请先输入密码！");
+                    return false;
+                }
+                // 方法后端接口，验证用户信息
+                jQuery.getJSON("/user/login", {
+                    "username": username,
+                    "password": password
+                }, function (result) {
+                    if (result != null && result.data != null &&
+                        result.data.id > 0) {
+                        // 登录成功
+                        if (result.data.isadmin == 1) {
+                            // 是管理员
+                            alert("登录成功！");
+                            // 隐藏左侧未登录之前的导航，显示欢迎信息
+                            app.login.isLogin = true;
+                            // 隐藏登录窗体
+                            app.login.showLoginDialog = false;
+                            // 请求后端得到菜品列表
+                            jQuery.getJSON("/dish/list", {}, function (result) {
+                                if (result != null && result.data != null) {
+                                    app.dishes = result.data;
+                                }
+                            });
+                        } else {
+                            alert("非法操作，权限不足！");
+                        }
+                    } else {
+                        // 用户名或密码错误，请重新输入
+                        alert("用户名或密码错误，请重新输入!");
+                    }
+                });
+            },
+
+            //删除菜品
+            del(did){
+                if(confirm("确定删除该菜品吗？")){
+                    jQuery.getJSON("/dish/del", {"id": did}, function (result) {
+                        if (result != null && result.data != null &&
+                            result.data > 0) {
+                            // 删除成功
+                            alert("恭喜：操作成功!");
+                            location.href = location.href; // 刷新当前页面
+                        } else {
+                            alert("抱歉：操作失败，请重试！");
+                        }
+                    });
+
+                }
+
+            },
+
+            // 判断是否已经登录
+            isLogin() {
+                jQuery.getJSON("/user/islogin", {}, function (result) {
+                    if (result != null && result.data != null &&
+                        result.data.id > 0) {
+                        // 登录状态
+                        if (result.data.isadmin == 1) {
+                            // 是超级管理员
+
+                            app.login.inputUsername = result.data.username;
+
+                            // 隐藏左侧未登录之前的导航，显示欢迎信息
+                            app.login.isLogin = true;
+
+                            // 请求后端得到菜品列表
+                            jQuery.getJSON("/dish/list", {}, function (result) {
+                                if (result != null && result.data != null) {
+                                    app.dishes = result.data;
+                                }
+                            });
+                        }
+                    }
+                });
+            },
+
+            // 新增菜品
+            addDish() {
+                if (confirm("是否确认添加")) {
+                    let name = app.newDish.name;
+                    let price = app.newDish.price;
+                    if (name == "") {
+                        alert("请先输入菜品名称！");
+                        return false;
+                    }
+                    if (price == "" || price == 0) {
+                        alert("请先输入价格！");
+                        return false;
+                    }
+                    jQuery.getJSON("/dish/add", {"name": name, "price": price},
+                        function (result) {
+                            if (result != null && result.data != null &&
+                                result.data > 0) {
+                                // 添加成功
+                                alert("恭喜：菜品添加成功！");
+                                location.href = location.href;
+                            } else {
+                                alert("抱歉：操作失败请重试！");
+                            }
+                        });
+                }
+            },
+
+            // 查看所有人的订单
+            showOrder() {
+                jQuery.getJSON("/order/alllist", {},
+                    function (result) {
+                        if (result != null && result.data != null) {
+                            app.orders = result.data;
+                            // 显示订单列表窗体
+                            app.status = 'ordersPage';
+                        }
+                    });
+            },
+
+            // 查询订单详情
+            detail(oid) {
+                jQuery.getJSON("/detail/list", {"oid": oid}, function (result) {
+                    if (result != null && result.data != null) {
+                        app.curOrder = result.data;
+                        // 显示订单详情的页面
+                        app.showCurOrder = true;
+                    }
+                });
+            },
+
+            // 计算订单详情的总价
+            totalPrice() {
+                let money = 0;
+                app.curOrder.forEach(item => {
+                    money += item.dish.price;
+                });
+                return money;
+            },
+
+            // 修改订单状态
+            upStatus(oid, status) {
+                status = status ? 1 : 0;
+                jQuery.getJSON("/order/up", {
+                    "oid": oid,
+                    "status": status
+                }, function (result) {
+                    if (result != null && result.data != null &&
+                        result.data > 0) {
+                        alert("恭喜：状态修改成功！");
+                    } else {
+                        alert("抱歉：操作失败，请重试！");
+                    }
+                });
+            },
+
+            // 退出登录
+            logout() {
+                if (confirm("是否确认退出？")) {
+                    jQuery.getJSON("/user/logout", {}, function (result) {
+                        if (result != null && result.data != null &&
+                            result.data > 0) {
+                            // 退出成功
+                            alert("退出成功");
+                            location.href = location.href;
+                        } else {
+                            alert("抱歉：操作失败，请重试！");
+                        }
+                    });
+                }
+            }
+
 
         },
         computed: {},
         vuetify: new Vuetify(),
     });
+    app.isLogin();
 </script>
 </body>
 

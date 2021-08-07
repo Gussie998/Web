@@ -47,7 +47,7 @@
                     <v-list-item-title>{{login.inputUsername}} 您好!</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
-            <v-list-item link>
+            <v-list-item link v-on:click="status='dishesPage'">
                 <v-list-item-action>
                     <v-icon>mdi-cart-outline</v-icon>
                 </v-list-item-action>
@@ -55,7 +55,7 @@
                     <v-list-item-title>我要点菜</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
-            <v-list-item link>
+            <v-list-item link v-on:click="orderList">
                 <v-list-item-action>
                     <v-icon>mdi-cart-outline</v-icon>
                 </v-list-item-action>
@@ -63,7 +63,7 @@
                     <v-list-item-title>我的订单</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
-            <v-list-item>
+            <v-list-item link v-on:click="logout">
                 <v-list-item-action>
                     <v-icon>mdi-logout</v-icon>
                 </v-list-item-action>
@@ -101,7 +101,7 @@
                             {{dish.price}}
                         </td>
                         <td>
-                            <v-switch></v-switch>
+                            <v-switch v-model="dish.select"></v-switch>
                         </td>
                     </tr>
                     </tbody>
@@ -112,7 +112,7 @@
                     <div class="pa-2">已点 {{selectedDishCount}} 道菜, 总计 {{selectedDishPrice}} 元</div>
                 </v-col>
                 <v-col :cols="2">
-                    <v-btn color="primary" block>下单</v-btn>
+                    <v-btn color="primary" block v-on:click="dishSubmit">下单</v-btn>
                 </v-col>
             </v-row>
 
@@ -122,20 +122,18 @@
                     <thead>
                     <tr>
                         <th class="text-left">序号</th>
-                        <th class="text-left">用户</th>
                         <th class="text-left">状态</th>
                         <th class="text-left">时间</th>
                         <th class="text-left">详情</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>小明</td>
-                        <td>未完成</td>
-                        <td>2021-10-10</td>
+                    <tr v-for="order in orders">
+                        <td>{{order.id}}</td>
+                        <td>{{order.status==0?'未完成':'已完成'}}</td>
+                        <td>{{order.createtime}}</td>
                         <td>
-                            <v-btn color='primary'>查看详情</v-btn>
+                            <v-btn color='primary' v-on:click="detail(order.id)">查看详情</v-btn>
                         </td>
                     </tr>
                     </tbody>
@@ -236,11 +234,11 @@
                             </thead>
                             <tbody>
                             <tr v-for="dish in curOrder">
-                                <td>香菜</td>
-                                <td>10</td>
+                                <td>{{dish.dish.name}}</td>
+                                <td>{{dish.dish.price}}</td>
                             </tr>
                             <tr>
-                                <td>总金额: 10</td>
+                                <td>总金额: {{curOrderMoney()}}</td>
                                 <td>
                                     <v-btn color="primary" v-on:click="showCurOrder = false">关闭</v-btn>
                                 </td>
@@ -258,6 +256,7 @@
 <script>
     let app = new Vue({
         el: '#app',
+        // vuejs 里面的所有变量
         data: {
             drawer: null,
             status: 'dishesPage', // 取值为: ordersPage, dishesPage
@@ -284,6 +283,7 @@
             showCurOrder: false,
             curOrder: {}
         },
+        // 所有的方法
         methods: {
             // 登录方法
             doLogin() {
@@ -313,8 +313,8 @@
                         // 隐藏登录窗体
                         app.login.showLoginDialog = false;
                         // 请求后端得到菜品列表
-                        jQuery.getJSON("/dish/list",{},function (result) {
-                            if(result!=null && result.data!=null){
+                        jQuery.getJSON("/dish/list", {}, function (result) {
+                            if (result != null && result.data != null) {
                                 app.dishes = result.data;
                             }
                         });
@@ -364,14 +364,104 @@
                         alert("抱歉：添加失败，请重试！");
                     }
                 });
+            },
+            // 点餐，点击“下单”
+            dishSubmit() {
+                if (confirm("确实提交？")) {
+                    let dids = ""; // 菜品 id 集合
+                    app.dishes.forEach(dish => {
+                        if (dish.select) {
+                            dids += (dish.id + ",");
+                        }
+                    });
+                    if (dids != "") {
+                        // 有选中的菜品，请求后端实现点餐
+                        jQuery.getJSON("/order/add",{"dids":dids},function (result) {
+                            if(result!=null && result.data!=null && result.data>0){
+                                // 添加成功
+                                alert("恭喜：点餐成功！");
+                            }else{
+                                alert("抱歉：操作失败，请重试！");
+                            }
+                        });
+                    } else {
+                        alert("请先选中菜品信息！");
+                    }
+                }
+            },
+            // 判断是否登录的方法
+            isLogin() {
+                jQuery.getJSON("/user/islogin",{},function(result){
+                    if(result!=null && result.data!=null &&
+                        result.data.id>0){
+                        // 登录状态
+                        app.login.inputUsername = result.data.username;
+
+                        // 隐藏左侧未登录之前的导航，显示欢迎信息
+                        app.login.isLogin = true;
+
+                        // 请求后端得到菜品列表
+                        jQuery.getJSON("/dish/list", {}, function (result) {
+                            if (result != null && result.data != null) {
+                                app.dishes = result.data;
+                            }
+                        });
+                    }
+                });
+            },
+            // 退出登录
+            logout(){
+                if(confirm("是否确认退出？")){
+                    jQuery.getJSON("/user/logout",{},function (result) {
+                        if(result!=null && result.data!=null &&
+                            result.data>0){
+                            // 退出成功
+                            alert("退出成功");
+                            location.href = location.href;
+                        }else{
+                            alert("抱歉：操作失败，请重试！");
+                        }
+                    });
+                }
+            },
+            orderList(){
+                jQuery.getJSON("/order/list",{},function(result){
+                    if(result!=null && result.data!=null){
+                        // 获取列表成功
+                        app.orders = result.data;
+                        app.status='ordersPage';
+                    }else{
+                        // 获取订单失败
+                        alert("抱歉：订单获取失败，请重试！");
+                    }
+                });
+            },
+            // 查询订单详情
+            detail(oid){
+                jQuery.getJSON("/detail/list",{"oid":oid},function (result) {
+                    if(result!=null && result.data!=null){
+                        app.curOrder = result.data;
+                        // 显示订单详情的页面
+                        app.showCurOrder = true;
+                    }
+                });
+            },
+            // 计算某个订单详情的总钱数
+            curOrderMoney(){
+                let  money = 0;
+                app.curOrder.forEach(order=>{
+                    money += order.dish.price;
+                });
+                return money;
             }
         },
+        // 计算
         computed: {
             // 点餐的个数
             selectedDishCount() {
                 let count = 0;
                 this.dishes.forEach(dish => {
-                    if (dish.isSelected) {
+                    if (dish.select) {
                         count++;
                     }
                 });
@@ -381,7 +471,7 @@
             selectedDishPrice() {
                 let price = 0;
                 this.dishes.forEach(dish => {
-                    if (dish.isSelected) {
+                    if (dish.select) {
                         price += dish.price;
                     }
                 })
@@ -390,6 +480,8 @@
         },
         vuetify: new Vuetify(),
     });
+    // 页面加载完成之后，访问是否登录的方法
+    app.isLogin();
 </script>
 </body>
 
